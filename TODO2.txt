@@ -1,0 +1,23 @@
+A faire:
+- Faire adresse info@notresite.com pour tout (commandes, support)
+- Compte PayPal
+- Profils sur les réseaux sociaux (exposés discrètement)
+- Site de présentation irréprochable et Mobile-friendly
+
+Procédure de projet
+
+Formulaire de contact
+- Nom
+- Mail
+- Entreprise
+- Détails de votre projet
+
+
+PHP: Envoi d'un mail contenant le formulaire sur gweedzy@gmail.com et joachimrochat@gmail.com
+
+Envoi d'un mail type: "Nous sommes intéressés nous souhaitons vous contacter pour discuter de vos perspectives blabla"
+
+Définition des objectifs:
+- Type (ECommerce, Vitrine, Forum, Presse)
+- Précisions suivant le type de projet
+- Devis
