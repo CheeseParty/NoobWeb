@@ -1,0 +1,19 @@
+=========================================================
+== LIBRAIRIES SUR CDNJS: (chercher "jquery" sur cdnjs) ==
+=========================================================
+
+=> Faire un fichier qui les contient pour éviter
+   trop de requêtes ? /!\ pas à jour
+
+LazyLoad : Chargement paresseux des images
+	http://www.appelsiini.net/projects/lazyload
+	Avec fadein et threshold
+
+jQuery.transit : Animations CSS3 avec jQuery
+	http://ricostacruz.com/jquery.transit/
+
+jQuery.pjax : AJAX + pushState (le tout fonctionnel)
+	http://pjax.heroku.com/
+
+js-cookie : Gestion des cookies (vanilla js)
+	https://github.com/js-cookie/js-cookie
