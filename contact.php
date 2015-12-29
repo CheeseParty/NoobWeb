@@ -21,10 +21,10 @@
         <div id="contactsection">
             <form method="post">
                 <h1>Contactez nous</h1>
-                <input type="text" name="nom" class="textboxform" placeholder="Prénom NOM">
-                <input type="email" name="email" class="textboxform" placeholder="Adresse mail (example@domaine.fr)">
-                <input type="text" name="entreprise" class="textboxform" placeholder="Nom de votre entreprise">
-                <textarea name="details" rows="8" class="textboxform" placeholder="Détails de votre projet, informations sur votre entreprise.. Notez que certaines informations pourront être facteur du design de votre site, selon la clientèle visée, le statut de l'entreprise.."></textarea>
+                <input type="text" class="textboxform" placeholder="Prénom NOM">
+                <input type="email" class="textboxform" placeholder="example@domaine.fr">
+                <input type="text" class="textboxform" placeholder="Nom de votre entreprise">
+                <textarea rows="8" class="textboxform" placeholder="Détails de votre projet, informations sur votre entreprise.. "></textarea>
                 <input type="submit" value="Envoyer le message" class="contactformbtn">
             </form>
         </div>
