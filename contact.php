@@ -22,7 +22,7 @@
             <form method="post">
                 <h1>Contactez nous</h1>
                 <input type="text" class="textboxform" placeholder="Prénom NOM">
-                <input type="email" class="textboxform" placeholder="example@domaine.fr">
+                <input type="email" class="textboxform" placeholder="exemple@domaine.fr">
                 <input type="text" class="textboxform" placeholder="Nom de votre entreprise">
                 <textarea rows="8" class="textboxform" placeholder="Détails de votre projet, informations sur votre entreprise.. "></textarea>
                 <input type="submit" value="Envoyer le message" class="contactformbtn">

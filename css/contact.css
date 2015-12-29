@@ -13,12 +13,17 @@
     width:500px;
     padding:12px 8px;
     border:none; 
-   
-    
+   font-weight:300; 
+    resize:none;
 }
 
-#contactsection form textarea {
-    resize:none;
+.textboxform:focus{
+    -moz-box-shadow: 2px 2px 20px 0px #cfcfcf;
+    -webkit-box-shadow: 2px 2px 20px 0px #cfcfcf;
+    -o-box-shadow: 2px 2px 20px 0px #cfcfcf;
+    box-shadow: 2px 2px 20px 0px #cfcfcf;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=134, Strength=20);
+    outline:none;
 }
 
 #contactsection form h1 {
@@ -29,10 +34,10 @@
 }
 
 .contactformbtn {
-    width:500px;
+    width:516px;
     display:block;
     margin:15px auto;
-    padding:8px 10px;
+    padding:15px 10px;
     transition:all 0.4s ease;
     background:#435D77;
     border:0;
