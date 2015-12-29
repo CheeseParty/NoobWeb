@@ -20,8 +20,7 @@ li{
     height: 75px;
     line-height: 75px;
     background-color: #EAEAEA/*#f4f4f4*/;
-    
-    border-bottom:1px #494949;
+    border-bottom:1px solid #CACACA;
 }
 #topbarcontent {
     width:70%;

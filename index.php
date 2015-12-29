@@ -53,7 +53,7 @@
             <div class="box">
                 <img class="boximg" src="speed2.svg" alt="speedimgnoobweb">
                 <p class="boxtitle">Rapidité</p>
-                <p class="boxtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum arcu ut elit tincidunt, ut feugiat justo lacinia. In hac habitasse platea dictumst.                  Praesent maximus dui lectus, non fringilla eros dapibus vitae. Etiam non arcu ipsum. Nam venenatis, est tincidunt lobortis tincidunt, felis nisi elementum lectus, ac                           elementum neque quam consectetur quam. Morbi eget lectus pulvinar, porttitor arcu efficitur, pretium ante. </p>
+                <p class="boxtext">Nous nous concentrons sur votre commande et faisons de notre mieux pour que votre site soit prêt rapidement, cependant ce n'est pas notre profession, nous                   n'avons donc pas des journées entières disponibles. Le temps nécessaire dépend de votre commande, il sera indiqué dans la validation de votre devis par message élécronique.                 </p>
             </div>
             
             <div class="box">
