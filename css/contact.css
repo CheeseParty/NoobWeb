@@ -1,0 +1,59 @@
+#contactsection {
+    margin:100px auto;
+    width:100%;
+    background:#95a5a6; /* Background de la div à définir */
+    font-size:15px;
+    padding:15px;
+    font-family:Poppins;
+}
+
+.textboxform {
+    display:block;
+    margin:15px auto 0 auto;
+    width:500px;
+    padding:12px 8px;
+    border-radius:5px;
+    border:none; 
+    
+}
+
+#contactsection form textarea {
+    resize:none;
+}
+
+#contactsection form h1 {
+    margin:0;
+    text-align:center;
+    display: block;
+    color:#263B50;
+}
+
+.contactformbtn {
+    width:500px;
+    display:block;
+    margin:15px auto;
+    padding:8px 10px;
+    transition:all 0.4s ease;
+    background:#435D77;
+    border:0;
+    border-radius:25px;
+    color:#fff;
+}
+
+.contactformbtn:hover {
+    background:#394F65;
+ 
+}
+
+::-webkit-input-placeholder {
+   font-style: italic;
+}
+:-moz-placeholder {
+   font-style: italic;  
+}
+::-moz-placeholder {
+   font-style: italic;  
+}
+:-ms-input-placeholder {  
+   font-style: italic; 
+}
