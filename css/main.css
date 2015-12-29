@@ -82,6 +82,8 @@ a {
 
 .header-container {
     box-shadow: 0px 1px 10px -5px black;
+    position: fixed;
+    width: 100%;
 }
 
 header {
@@ -148,7 +150,7 @@ header nav a:hover {
    =============== */
 
 .main-container {
-    padding-top: 90px;
+    padding-top: 128px;
 }
 
 .main {
@@ -179,8 +181,15 @@ header nav a:hover {
 @media only screen and (max-width: 768px) {
     header {
         height: auto;
+        padding: 0;
     }
-
+        
+    header > div h1 {
+        margin-bottom: 20px;
+        font-size: 7vw;
+        margin: 4vw 0;
+    }
+    
     header > div,
     header > div h1,
     header nav {
@@ -188,6 +197,24 @@ header nav a:hover {
         width: auto;
         display: block;
         text-align: center;
+    }
+    
+    .main-container {
+        padding-top: calc(112px + 7vw);
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    header {
+        line-height: 3.5vw;
+    }
+    
+    header nav {
+        font-size: 3.2vw;
+    }
+        
+    .main-container {
+        padding-top: 22vw;
     }
 }
 
