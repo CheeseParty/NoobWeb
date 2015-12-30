@@ -89,7 +89,9 @@ a {
 header {
     text-align: justify;
     height: 60px;
-    padding: 2em 5%;
+    padding: 20px 0;
+    max-width: 1200px;
+    width: 90%;
     text-transform: uppercase;
 }
 
@@ -150,7 +152,7 @@ header nav a:hover {
    =============== */
 
 .main-container {
-    padding-top: 128px;
+    padding-top: 200px;
 }
 
 .main {
@@ -175,47 +177,17 @@ header nav a:hover {
 
 @media only screen and (max-width: 1140px) {
 
-
 }
 
 @media only screen and (max-width: 768px) {
-    header {
-        height: auto;
-        padding: 0;
-    }
-        
-    header > div h1 {
-        margin-bottom: 20px;
-        font-size: 7vw;
-        margin: 4vw 0;
-    }
-    
-    header > div,
-    header > div h1,
-    header nav {
-        height: auto;
-        width: auto;
+    header nav,
+    header nav a {
         display: block;
-        text-align: center;
-    }
-    
-    .main-container {
-        padding-top: calc(112px + 7vw);
     }
 }
 
 @media only screen and (max-width: 530px) {
-    header {
-        line-height: 3.5vw;
-    }
-    
-    header nav {
-        font-size: 3.2vw;
-    }
-        
-    .main-container {
-        padding-top: 22vw;
-    }
+
 }
 
 @media only screen and (max-width: 480px) {
