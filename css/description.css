@@ -1,8 +1,143 @@
-#descriptionsection {
+.description {
     margin:100px auto;
     width:100%;
-    background:#E4E4E4; /* Background de la div à définir */
+    background:#16a085; /* Background de la div à définir */
+    color:#F7F7F9;
     font-size:15px;
-    padding:15px;
+    padding:50px;
     font-family:Poppins;
+    text-align: center;
 }
+
+
+
+.description-section-title {
+    margin:0;
+    padding-bottom:50px;
+}
+.description img {
+    width:150px;
+    margin:0 auto;
+    display: block;
+}
+
+.person {
+    
+    transition:border 0.5s ease-out; 
+    padding:20px;
+    border:2px solid #16a085;
+    text-align: center;
+    width:400px;
+    display:inline-block;
+}
+
+.person:nth-child(3) {
+    margin:0 50px 0 50px;
+}
+
+.person:hover {
+    border:2px solid #F7F7F9;
+}
+
+.person:hover .competence-maquette {
+     width:80%;
+}
+
+.person:hover .competence-programmation {
+     width:70%;
+}
+
+.person:hover .competence-design {
+     width:90%;
+}
+
+.person:nth-child(3):hover .competence-maquette {
+    width:40%;
+}
+
+.person:nth-child(3):hover .competence-programmation {
+    width:95%;
+}
+
+.person:nth-child(3):hover .competence-design {
+    width:75%;
+}
+
+.competences-zone {
+    display: block;
+    text-align:left;
+    margin: 20px auto;
+    width:80%;
+}
+
+.competences-zone h4 {
+    text-align:center;
+    margin:0;
+}
+
+.competence-title {
+    font-size:12px;
+    padding-right: 20px;
+    height:30px;
+    line-height: 30px;
+    display:inline-block;
+    margin:0;
+}
+
+.competence {
+    text-align: right;
+    height: 30px;
+    line-height: 30px;
+    margin-top:15px;
+    display:inline-block;
+    width:100%;
+}
+
+.competence-barre {
+    line-height:30px;
+    display:inline-block;
+    width:60%;
+    float:right;
+    border:1px solid #fff;
+    height:30px;
+}
+
+.competence-maquette,
+.competence-programmation,
+.competence-design {
+   transition:width 1s linear;
+    height:30px;
+    line-height: 30px;
+    background-color:#fff;
+}
+
+.person .competence-maquette {
+    width:0;
+}
+
+.person .competence-programmation {
+    width:0;
+}
+
+.person .competence-design {
+    width:0;
+}
+
+.person .comp-maq-percent,
+.person .comp-prog-percent,
+.person .comp-des-percent {
+    display:none;
+    margin:0 auto;
+    color:#000;
+    text-align:right;
+    padding-right:20px;
+    font-size:12px;
+}
+
+.person:hover .person .competence-maquette .person .comp-maq-percent, 
+.person2:hover, 
+.person3:hover {
+    display:inline-block;
+}
+
+

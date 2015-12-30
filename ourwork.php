@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,500" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/ourwork.css">
-
+        <link rel="stylesheet" href="css/main.css">
         <!--[if lt IE 9]>
             <script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
         <![endif]-->
