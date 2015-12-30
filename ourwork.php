@@ -19,8 +19,8 @@
     
     <body>
         <section class="our-work">
-            <img src="compatibility1.svg" alt="Ordinateur, Mobile & Tablette, Compatibilité de votre site" class="our-work-big-img">
             <span class="our-work-textzone">
+            <img src="work.svg" alt="Ordinateur, Mobile & Tablette, Compatibilité de votre site" class="our-work-big-img"/>
                 <h2>Notre Travail</h2>
                 <p class="our-work-text">
                     Sed in mi feugiat, scelerisque turpis quis, varius lacus. Phasellus iaculis, velit id vehicula aliquet, neque libero laoreet orci, nec molestie nibh lorem a velit. Nam                         posuere nisi vitae libero vulputate gravida. Nulla vitae consequat odio, ut pretium orci. Sed efficitur euismod hendrerit. Phasellus facilisis egestas enim in ullamcorper.                     Nulla non blandit tellus, eu hendrerit ligula. Proin porta posuere augue tempus sagittis. Vivamus nisi odio, elementum vel convallis in, imperdiet id dolor. Mauris risus                       leo, porta eu viverra eget, euismod id nulla. Vivamus ultrices augue mattis metus consectetur, id posuere leo placerat. Duis sit amet orci commodo, sagittis odio non,                         porta tortor. Proin sit amet accumsan justo, nec cursus odio. Integer semper turpis dui, ac semper dolor rutrum vel.
