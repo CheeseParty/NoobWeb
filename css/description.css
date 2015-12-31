@@ -1,6 +1,5 @@
 .description {
     margin:100px auto;
-    width:100%;
     background:#16a085; /* Background de la div à définir */
     color:#F7F7F9;
     font-size:15px;
@@ -22,7 +21,6 @@
 }
 
 .person {
-    
     transition:border 0.5s ease-out; 
     padding:20px;
     border:2px solid #16a085;
@@ -32,7 +30,7 @@
 }
 
 .person:nth-child(3) {
-    margin:0 50px 0 50px;
+    margin:0 2% 0 2%;
 }
 
 .person:hover {
@@ -65,13 +63,11 @@
 
 .competences-zone {
     display: block;
-    text-align:left;
     margin: 20px auto;
     width:80%;
 }
 
 .competences-zone h4 {
-    text-align:center;
     margin:0;
 }
 
@@ -140,4 +136,95 @@
     display:inline-block;
 }
 
+@media only screen and (max-width: 1515px) {
+    .person {
+        width:300px;
+    }
+    
+    .description img {
+        width:100px;
+    }
+    
+    .description-section-title {
+        padding-bottom:20px;
+    }
+    
+    .competences-zone {
+        margin: 15px auto;
+        width:95%;
+    }
+    
+    .competence-title {
+        font-size:11px;
+        padding-right: 15px;
+        height:20px;
+        line-height: 20px;
+        display:inline-block;
+        margin:0;
+    }
+    
+    .competence-maquette,
+    .competence-programmation,
+    .competence-design {
+        height:20px;
+        line-height: 20px;
+    }
+    
+    .competence-barre {
+        line-height:20px;
+        display:inline-block;
+        width:60%;
+        float:right;
+        border:1px solid #fff;
+        height:20px;
+    }
+    .competence {
+        height: 20px;
+        line-height: 20px;
+    }
+}
 
+@media only screen and (max-width: 1202px) {
+    .description {
+        padding:35px;
+    }
+    
+    .person {
+        width:90%;        
+    }
+    
+     .description img {
+        width:70px; 
+    }
+    
+    .person-about {
+        font-size:80%;
+        line-height: 1.5;
+    }
+    
+    .competences-zone {
+        margin: 15px auto;
+        width:70%;
+    }
+    
+    .competence-title {
+        font-size:80%;
+        padding-right: 10px;
+    }
+    
+    .competence {
+        text-align: left;
+
+    }
+    
+    .person:nth-child(3) {
+        margin:2% 0;
+    }
+    
+    .competence-barre {
+        width:70%;
+        float:right;
+        border:1px solid #fff;
+        height:20px;
+    }
+}
