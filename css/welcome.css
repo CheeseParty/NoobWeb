@@ -1,0 +1,22 @@
+.welcome {
+    background:#53D769;
+    width:100%;
+    height:500px;
+    padding:50px 0;
+    font-family:Poppins;
+    margin:100px auto;
+    color:#ecf0f1;
+    line-height: 500px;
+}
+
+.welcome-text{
+    display: block;
+    margin:0 auto;
+    text-transform: uppercase;
+    width:60%;
+    font-size:50px;
+    line-height: 1.3;
+    text-align: center;
+    margin: 0;
+    padding:0;
+}

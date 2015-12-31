@@ -1,6 +1,6 @@
 .description {
     margin:100px auto;
-    background:#16a085; /* Background de la div à définir */
+    background:#167EFB;/*#16a085; /* Background de la div à définir */
     color:#F7F7F9;
     font-size:15px;
     padding:50px;
@@ -23,7 +23,7 @@
 .person {
     transition:border 0.5s ease-out; 
     padding:20px;
-    border:2px solid #16a085;
+    border:2px solid #167EFB;
     text-align: center;
     width:400px;
     display:inline-block;
@@ -228,3 +228,5 @@
         height:20px;
     }
 }
+
+    
