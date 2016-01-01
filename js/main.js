@@ -2,25 +2,33 @@
  * Script principal
  */
 
-// Toggling du menu
-$(".menu-btn").click(function() {
+// Listener du bouton menu
+$('.menu-btn').on("click",toggleMenu);
+
+// Fonction de toggling du menu
+function toggleMenu() {
     // Variables
-    var nav = $("header nav");
+    var nav = $('header nav');
+    var menu_btn = $('.menu-btn');
+    var main = $('.main-container');
     
     // Toggling
-    if ( nav.css("display") == "none" ) {
-        nav.css("display","block");
+    nav.toggleClass('menu-hidden');
+    nav.toggleClass('menu-shown');
+    
+    // Délai avant le display:none si on le cache
+    if ( nav.hasClass('menu-hidden') ) {
+        menu_btn.css('background','#EAEAEA');
+        // Listener de fermeture sur le main
+        main.off("click",toggleMenu);
         setTimeout(function() {
-            nav.css("opacity",1);
-            nav.css("width","100%");
-        },0);
-    } else {
-        nav.css("opacity","0");
-        nav.css("width","110%");
-        setTimeout(function() {
-            nav.css("display","none");
+            nav.css('display','none');
         },200);
+    } else {
+        menu_btn.css('background','#d1d1d1');
+        nav.css('display','block');
+        // Listener de fermeture sur le main
+        main.on("click",toggleMenu);
     }
-    console.log("done");
-});
+};
 

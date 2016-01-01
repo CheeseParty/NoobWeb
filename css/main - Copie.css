@@ -47,18 +47,13 @@ textarea {
    =============== */
 
 body {
-    font: 300 17px 'Poppins', sans-serif;
+    font: 300 17px/26px 'Poppins', sans-serif;
     height: 100em;
     background: #F9F9F9;
 }
 
-button,
-a {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
 .wrapper {
-    max-width: 1200px;
+    max-width: 900px;
     width: 90%;
     margin: 0 auto;
 }
@@ -92,17 +87,18 @@ input::-moz-focus-inner {
    =============== */
 
 .header-container {
-    box-shadow: 0px 5px 12px -10px #747474;
+    box-shadow: 0px 1px 10px -5px black;
     position: fixed;
     width: 100%;
     background: #F9F9F9;
-    z-index: 999;
 }
 
 header {
     text-align: justify;
     height: 60px;
     padding: 20px 0;
+    max-width: 1200px;
+    width: 90%;
     text-transform: uppercase;
 }
 
@@ -167,57 +163,22 @@ header nav a:hover {
     border: none;
     text-transform: uppercase;
     background: #EAEAEA;
-    transition: background .2s;
-}
-
-.menu-btn:focus {
-    outline: 0;
 }
 
 /* ===============
-    Partie principale
+    Partie 1
    =============== */
 
 .main-container {
+    padding-top: 200px;
+}
+
+.main {
 
 }
 
-.part-1 {
-    background: url("../img/part-1.jpg");
-    background-size: cover;
-    background-position: 50%;
-    height: 100vh;
-}
-
-.part-1-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-.part-1-intro {
-    font-weight: 500;
-    font-size: 4em;
-    color: #171717;
-    text-shadow: 0 0 25px #D6D6D6;
-}
-
-.part-1-description {
-    font-size: 21px;
-    text-shadow: 0 0 10px #FFF;
-}
-
-/* ===============
-    Footer
-   =============== */
-
-.footer-container {
-    background: #3E4651;
-}
-
-footer {
-    
+.first {
+    height: 90vh;
 }
 
 /* ===============
@@ -242,15 +203,21 @@ footer {
     }
     
     header nav {
+        /*position: relative;*/
         position: fixed;
         width: 110%;
-        left: 0;
+        right: 0;
         background: #F9F9F9;
         padding: 0.5em 0;
         display: none;
         opacity: 0;
         border-top: 1px solid #6F6F6F;
-        box-shadow: 0px 5px 12px -10px #747474;
+        box-shadow: 0px 1px 10px -5px black;
+        
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
     }
     
     header nav a {
@@ -261,22 +228,6 @@ footer {
     .menu-btn {
         display: block;
     }
-    
-    .menu-shown {
-        animation: .2s showMenu forwards;
-    }
-    
-    .menu-hidden {
-        animation: .2s hideMenu forwards;
-    }
-    
-    .main-container {
-        
-    }
-    
-    .part-1-intro {
-        font-size: 9vw;
-    }
 }
 
 @media only screen and (max-width: 530px) {
@@ -285,34 +236,6 @@ footer {
 
 @media only screen and (max-width: 480px) {
 
-}
-
-/* ==========================================================================
-    Keyframes
-   ========================================================================== */
-
-@keyframes showMenu {
-    0% {
-        transform: translate3d(0,-30px,0);
-        opacity: 0;
-    }   
-    
-    100% {
-        transform: translate3d(0,0,0);
-        opacity: 1;
-    }
-}
-
-@keyframes hideMenu {
-    0% {
-        transform: translate3d(0,0,0);
-        opacity: 1;
-    }   
-    
-    100% {
-        transform: translate3d(0,30px,0);
-        opacity: 0;
-    }
 }
 
 /* ==========================================================================
@@ -331,23 +254,4 @@ footer {
 
 .clearfix {
     *zoom: 1;
-}
-
-.blurfix {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    backface-visibility: hidden;
-
-    -webkit-perspective: 1000;
-    -moz-perspective: 1000;
-    -ms-perspective: 1000;
-    perspective: 1000;
-    
-    transform: translate3d(0,0,0);
-    
-    -webkit-filter: blur(0);
-    -moz-filter: blur(0);
-    -ms-filter: blur(0);
-    filter: blur(0);
 }
