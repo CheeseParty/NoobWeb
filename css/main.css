@@ -48,7 +48,7 @@ textarea {
 
 body {
     font: 300 17px 'Poppins', sans-serif;
-    height: 100em;
+    height: 200em;
     background: #F9F9F9;
 }
 
@@ -149,11 +149,9 @@ header nav a:last-child {
 
 header nav a {
     -webkit-transition: color 0.2s;
-    -moz-transition: color 0.2s;
-    -o-transition: color 0.2s;
     transition: color 0.2s;
 }
-
+ 
 header nav a:hover {
     color: #e74c3c;
 }
@@ -167,6 +165,7 @@ header nav a:hover {
     border: none;
     text-transform: uppercase;
     background: #EAEAEA;
+    -webkit-transition: background .2s;
     transition: background .2s;
 }
 
@@ -178,35 +177,66 @@ header nav a:hover {
     Partie principale
    =============== */
 
-.main-container {
+/* Intro */
 
-}
-
-.part-1 {
-    background: url("../img/part-1.jpg");
+.intro {
+    background: url(../img/intro.jpg);
     background-size: cover;
     background-position: 50%;
+    height: 800px;
     height: 100vh;
 }
 
-.part-1-wrapper {
+.intro-wrapper {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
 }
 
-.part-1-intro {
+.intro-text {
     font-weight: 500;
     font-size: 4em;
     color: #171717;
     text-shadow: 0 0 25px #D6D6D6;
 }
 
-.part-1-description {
+.intro-description {
     font-size: 21px;
     text-shadow: 0 0 10px #FFF;
 }
+
+/* Notre travail */
+
+.our-work {
+    background: #DF554F;
+    color: #fff;
+}
+
+.our-work h2 {
+    margin: 0;
+}
+
+.our-work img {
+    width: 200px;
+    float: left;
+    padding: 15px 30px 0 0;
+}
+
+.our-work-textzone {
+    padding: 50px 0;
+}
+
+.our-work-text {
+    margin: 0;
+    text-align: justify;
+}
+
+/* Nos réalisations */
+
+
 
 /* ===============
     Footer
@@ -243,10 +273,10 @@ footer {
     
     header nav {
         position: fixed;
-        width: 110%;
+        width: 100%;
         left: 0;
         background: #F9F9F9;
-        padding: 0.5em 0;
+        padding: 0.5em 10px;
         display: none;
         opacity: 0;
         border-top: 1px solid #6F6F6F;
@@ -263,53 +293,98 @@ footer {
     }
     
     .menu-shown {
+        -webkit-animation: .2s showMenu forwards;
         animation: .2s showMenu forwards;
     }
     
     .menu-hidden {
+        -webkit-animation: .2s hideMenu forwards;
         animation: .2s hideMenu forwards;
     }
     
-    .main-container {
-        
+    .intro-text {
+        font-size: 9vw;
     }
     
-    .part-1-intro {
-        font-size: 9vw;
+    .our-work-text {
+        font-size: calc(1vw + 10px);
+    }
+    
+    .our-work img {
+        width: 24%;
+        padding: 11px 15px 0 0;
     }
 }
 
 @media only screen and (max-width: 530px) {
-
+    
 }
 
 @media only screen and (max-width: 480px) {
-
+    .our-work-text {
+        text-align: left;
+    }
+    
+    .our-work-textzone {
+        padding: 20px 0;
+    }
 }
 
 /* ==========================================================================
     Keyframes
    ========================================================================== */
 
-@keyframes showMenu {
+@-webkit-keyframes showMenu {
     0% {
+        -webkit-transform: translate3d(0,-30px,0);
         transform: translate3d(0,-30px,0);
         opacity: 0;
     }   
     
     100% {
+        -webkit-transform: translate3d(0,0,0);
         transform: translate3d(0,0,0);
         opacity: 1;
     }
 }
 
-@keyframes hideMenu {
+@keyframes showMenu {
     0% {
+        -webkit-transform: translate3d(0,-30px,0);
+        transform: translate3d(0,-30px,0);
+        opacity: 0;
+    }   
+    
+    100% {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes hideMenu {
+    0% {
+        -webkit-transform: translate3d(0,0,0);
         transform: translate3d(0,0,0);
         opacity: 1;
     }   
     
     100% {
+        -webkit-transform: translate3d(0,30px,0);
+        transform: translate3d(0,30px,0);
+        opacity: 0;
+    }
+}
+
+@keyframes hideMenu {
+    0% {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }   
+    
+    100% {
+        -webkit-transform: translate3d(0,30px,0);
         transform: translate3d(0,30px,0);
         opacity: 0;
     }
@@ -335,14 +410,14 @@ footer {
 
 .blurfix {
     -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     backface-visibility: hidden;
 
     -webkit-perspective: 1000;
-    -moz-perspective: 1000;
     -ms-perspective: 1000;
     perspective: 1000;
+    
+    -webkit-transform: translate3d(0,0,0);
     
     transform: translate3d(0,0,0);
     
